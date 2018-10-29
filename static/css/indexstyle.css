@@ -1,0 +1,74 @@
+*{margin: 0 auto;padding: 0;}
+a{text-decoration: none;font-family: "宋体";}
+li{list-style-type: none;}
+
+/*顶部菜单栏*/
+.header{width: 100%;height: auto;background: #f6f6f6;}
+.header_top{width: 1200px;height: 26px;background: #f6f6f6;border-bottom: 1px solid #ededed;}
+.top_in{width:604px;float: right;margin-right: 28px;}
+.top_in a,span{display:inline-block;float: left;font-size: 12px;height: 26px;line-height: 26px;}
+.top_in a{color: #666;padding: 0 10px;position: relative;}
+.top_in span{color: #d4d4d4;}
+.top_in .phone{margin-top: 2px; margin-left: -6px;margin-right: 4px;}
+.phoneCode{position: absolute; top: 26px;left: -50px;display: none;}
+
+/*logo标签栏*/
+.logo{width: 100%;height: auto;}
+.logo_box{width: 1200px;height: 103px;background: white;padding: 15px 0;overflow: hidden;}
+.box_inlogo{line-height: 133px;width: 300px;margin-left: 12px;float: left;cursor: pointer;}
+.txt_in{height: 32px;width: 445px;float: left;line-height: 30px;text-indent: 8px; padding-left: 5px;margin: 28px  0 0 66px;color: #b9b9b9;border: 2px solid #e60067;box-shadow:0 0 1px #e60067;}
+.btn_in{height: 35px;width:90px;color: white;background:#e60067;float: left;margin-top: 28px;border: 2px solid #e60067;font-size: 16px;box-shadow:0 0 1px #e60067;}
+.box_insearch ul{float: left;margin: 2px  0 0 72px}
+.box_insearch ul li{float: left;color: #b9b9b9;}
+.box_insearch ul li a{color: #b9b9b9;padding-left:5px;font-size: 12px;}
+.box_insearch ul li span{display: inline-block; margin-top: -1px;margin-left: 2px;}
+.box_insearch ul li .hot{color: #e60067;}
+.box_insearch ul li a:hover{color: #e60067;}
+.box_inlogoHot img{float: right; margin-top: -60px;}
+.box_inlogoHot ul{float: right;}
+.box_inlogoHot ul li{float: left;} 
+.box_inlogoHot ul li a{font-size: 12px;text-align: center;color: #000000;height:21px;border-color:#D9D9D9 #D9D9D9 #D9D9D9;border-width:1px 1px 1px medium ;border-style: solid solid solid none; line-height: 21px;width: 77px;display: block;}
+.box_inlogoHot ul li:first-child a{border-left: 1px solid #D9D9D9;}
+.box_inlogoHot ul li a:hover{background: #000;color: #fff;}
+/*横向导航栏*/
+.nav{width: 100%;height: auto;background: #000;}
+.nav_in{width: 1200px;height: 54px;background: #000;}
+.nav_in ul{overflow: hidden;}
+.nav_in ul li{float: left;}
+
+
+
+
+/*底部*/
+.footer_top{width: 100%;height: auto;background:#ececec;;padding: 15px 0 10px 0;}
+.footer_topin{width: 1182px;height: 227px;background:#ececec;}
+.footer_topin dl{font-size: 12px;padding: 0 32px;float: left;}
+.footer_topin dt a{color: #2f2f2f;font-weight: bold;cursor: pointer;}
+.footer_topin dd a{color: #7f7f7f;display: inline-block;margin-top: 8px;cursor: pointer;}
+.footer_topin dd font{color: #7f7f7f;display: inline-block;margin-top: 8px;cursor: pointer;}
+.dttop{margin-top: 20px;}
+
+.footer_bot{width: 1200px;height: 237px;}
+.footer_botin{width: 840px;text-align: 78px;padding-top: 18px;}
+.footer_botin img{display: inline-block;padding:0 16px;border-right: 1px solid #d9d9d9;}
+.bot_copy{font-family: "宋体";font-size: 12px;width:980px;position:relative;color: #797979;font-size: 12px;text-align: center;margin-top: 30px;line-height: 22px;}
+.bot_copy a{color: #797979;padding: 0 2px;display: inline-block;}
+.bot_copy a:hover{color: #e60067;}
+.copy_in{display: none; width: 465px;border: 1px solid #ccc;background: #F2F2F2;color: #565656;line-height: 22px;position: absolute;left: 365px;top: 19px; text-align: left;padding: 5px 10px;}
+
+.bot_logo{width: 720px;overflow: hidden;margin-top: 24px;}
+.bot_logo img{float: left;width: 86px;height: 33px;margin-right: 6px;}
+
+/*底部滚动条*/
+.footer_scroll{font-family: "宋体";font-size: 12px;border-bottom: 1px dashed #CDCDCD;border-top: 1px dashed #CDCDCD;height: 28px;margin-top: 10px;margin-bottom:10px;overflow: hidden;width: 980px;margin:10px auto;}
+.friend_link{float: left;width:70px;height:28px;line-height:28px;text-align:right;color: #555;}
+.friendlinks_slide{overflow:hidden;width:800px;float: left;margin-left: 10px;}
+.friendlinks_slide ul{list-style:none outside none;}
+.friendlinks_slide ul li{overflow:hidden;width:800px;height:28px;line-height:28px;}
+.friendlinks_slide ul li a{color: #797979;font-size: 12px;float:left;padding:0 3px;}
+.friendlinks_slide ul li a:hover{color: #e60067;}
+
+
+.out{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;z-index: 10000;}
+.in{width: 430px;height: auto;position: absolute;height: 430px;}
+.xx{position: absolute;top: 0;right: 0;}

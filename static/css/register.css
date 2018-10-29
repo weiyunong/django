@@ -1,0 +1,35 @@
+*{margin: 0 auto;padding: 0;}
+body{font-family: "宋体";line-height: 22px;font-size: 12px;color: #555;background: #cecccf;}
+a{color: #797979;font-size: 12px;text-decoration: none;}
+.head,.main,.foot{width: 1016px;}
+.user_info{background: #fff;overflow: hidden;padding-bottom: 6px;width: 1016px;margin-top: -8px;}
+.user_info_l{float: left;height: auto;width: 505px;}
+.user_info_l img{margin: 23px 18px 20px 84px;}
+.footer{color: #989898;float: left;padding-top: 78px;text-align: center;width: 980px;}
+.footer a{color: #888;}
+
+.user_info_r{float: left;height: auto;width: 400px;text-align: left;padding-top: 16px;overflow: hidden;}
+.register_method_in{font-size: 14px; color: #9f9f9f;cursor: pointer;display: inline-block;padding-bottom: 15px;position: relative;text-align: center;width: 49%;}
+.method_txt_1{background: black;display: inline-block;height: 2px;position: absolute;top:36px;left:71px;width: 55px;display: none;}
+.method_txt_2{background: black;display: inline-block;height: 2px;position: absolute;top:36px;left:62px;width: 72px;}
+.register_on{color: #000;}
+.register_style{border: 1px solid #dcdcdc;height: auto;padding: 27px 0 0 34px;width: 364px;}
+.register_style form{width: 364px;}
+.register_style_txt1,.register_style_txt2,.register_style_txt3,.register_style_txt4,.register_style_txt5,.register_style_txt6,.login_style_txt7{height: 65px;overflow: hidden;position: relative;width: 364px;}
+.txt1_in,.txt2_in,.txt3_in,.txt4_in,.txt6_in{border: 1px solid #C9C9C9;border-radius: 4px;height: 40px;line-height: 40px;padding-left: 32px;width: 290px;z-index: 0;}
+.email_rlable,.rpwd_lable{display: block;font: 12px/25px;height: 35px;left: -4px;position: absolute;top: 1px;width: 45px;z-index: 1;}
+.email_rlable,.rpwd_lable,.true_rlable1,.true_rlable2,.true_rlable3,.true_rlable4,.flase_rlable1,.flase_rlable2,.flase_rlable3,.flase_rlable4,.flase_rlable22,.flase_rlable33,.flase_rlable44{background: url(../img/login_icon0.png) no-repeat;}
+.email_rlable{background-position: -5px -49px;}
+.rpwd_lable{background-position: -5px -94px;}
+.txt5_topl,.txt5_botr_r{color: #999;margin-left: 6px;}
+.txt5_botl{width: 80px;height: 26px;text-indent: 22px;margin-left: 4px;}
+.txt5_botr{width: 80px;height: 30px;margin-left: 4px;background: white;border: 1px solid #e50065;}
+.txt6_in{padding-left: 0;width: 320px;font: 15px/40px "微软雅黑";margin-left: 4px;background: #e50065;border: 1px solid #e50065;color: white;cursor: pointer;}
+.txt7_in{margin-left: 4px;}
+.txt7_in_a{color: #e50065;}
+.true_rlable1,.true_rlable2,.true_rlable3,.true_rlable4{display: none;font: 12px/25px;height: 35px;right: 24px;position: absolute;top: 4px;width: 45px;z-index: 1;}
+.true_rlable1,.true_rlable2,.true_rlable3,.true_rlable4{background-position: 0px -14px;}
+.flase_rlable1,.flase_rlable2,.flase_rlable22,.flase_rlable3,.flase_rlable33,.flase_rlable4,.flase_rlable44{padding-left: 20px;position: absolute;top: 42px;display: none;}
+.flase_rlable1,.flase_rlable2,.flase_rlable22,.flase_rlable3,.flase_rlable33,.flase_rlable4,.flase_rlable44{background-position: 0px 5px;}
+.flase_rlable333{background: url(../img/icon_rank0.png) no-repeat;height: 14px;line-height: 0;overflow: hidden;vertical-align: middle;width: 141px;margin: 4px;display: none;}
+/*.flase_rlable333{background-position: 0 -14px;}*/
