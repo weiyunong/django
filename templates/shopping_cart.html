@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="{% static 'css/cart.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/jquery.spinner.css' %}" />
+		<link rel="icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+        <link rel="shortcut icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/cart.js' %}" ></script>
+        <script src="{% static 'js/jquery.cookie.js' %}"></script>
+{#        <script src="{% static 'js/test.js' %}"></script>#}
+		<title>购物车——梦芭莎时尚购物</title>
+	</head>
+	<body>
+		<div class="crat">
+			<div class="crattitle">
+                <dl class="top">
+                	<dt><input id="chkall" name="" type="checkbox"></dt>
+                	<dd class="qb">全部</dd>
+                    <dd class="sp">商品</dd>
+                    <dd class="dj">单价</dd>
+                    <dd class="sl">数量</dd>
+                    <dd class="jexj">金额小计</dd>
+                    <dd class="cz">操作</dd>
+                </dl>
+			</div>
+		    <div class="cratgoods">
+		    	<div class="buygoods_paygoods">
+		    		<div class="buygoods">
+		    			<div class="buygoods_title">
+		    				<span class="shangjia">以下商品由 梦芭莎 发货</span>
+                            <span class="yunfei">免配送费</span>
+		    			</div>
+		    			<div class="buygoods_detail">
+		    	            <dl class="top">
+                            	<dt><input class="chkall" checked="checked" name="" type="checkbox"></dt>
+                                <dd class="sp">
+                                	<span class="left"><a href=""><img src="{% static 'img/431216304-053-01-M.jpg' %}"></a></span>
+                                	<span class="right">
+                                		<span class="right_in"><a class="goods-link" href="" target="_blank"> 大热萌猫咪缤纷印花炫彩撞色罗纹装饰落肩袖圆领七分袖套头卫衣(431216304)</a></span>
+                                	    <span class="ziliao">品牌：韩伊儿　尺寸：S　颜色：宝蓝</span>
+                                	</span>
+                                </dd>
+                                <dd class="dj">
+                                	<p class="price">
+                                		<span class="dprice-icon">￥278.00</span>
+                                	</p>
+                                </dd>
+                                <dd class="sl clearfix">
+                                     <a class="J_minus minus" href="">-</a>
+                                    <input class="J_num num" value="2" type="text">
+                                     <a class="J_add add" href="">+</a>
+                                </dd>
+                                <dd class="jexj">
+                                	<span class="tprice-icon">￥</span>
+                                    278.00
+                                </dd>
+                                <dd class="cz">
+                                	<p class="xiugai"><span class="J_edit operation"> 修改 </span></p>
+                                	<p class="delect"><span class="J_del operation"> 移除 </span></p>
+                                </dd>
+                            </dl>
+		    			</div>
+		    		</div>
+		    		<div class="paygoods">
+		    			<div class="cleargoods"> </div>
+		    			<div class="goodsmoney">
+		    				<div class="zs">
+		    					商品数量总计：
+                                <span class="pics"><span class="nump">0</span>件</span>
+                                <span class="zj"> 折后商品金额总计</span>
+                                :
+                                <span class="rmb">￥ </span>
+                                <span class="howmuch">0</span>
+		    				</div>
+		    			</div>
+		    			<div class="moreorpay clearfix">
+		    				<div class="fl">
+		    					<img src="{% static 'img/qrcodecreate.png' %}" alt="" class="qr-code">
+		    					<img src="{% static 'img/qc_code_bg.jpg' %}" alt="" class="qr-code-bg">
+		    				</div>
+		    				<div class="fr">
+		    					<span class="toSettlement" id="J_toSettlement">去结算</span>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div style="clear: both;"></div>
+		    </div>	
+		</div>
+	</body>
+</html>

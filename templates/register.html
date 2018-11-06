@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>梦芭莎注册</title>
+		<link rel="stylesheet" href="{% static 'css/register.css' %}" />
+		<link rel="icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/register.js' %}" ></script>
+{#        <script src="{% static 'js/test.js' %}"></script>#}
+	</head>
+	<body>
+		<div class="head">
+			<a href="{% url 'apps:indexs' %}"><p><img src="{% static 'img/0309blogin2.jpg' %}" alt="" border="0"></p></a>
+		</div>
+		<div class="main">
+			<div class="user_info">
+				<div class="user_info_l">
+					<a href="{% url 'apps:indexs' %}"><p><img src="{% static 'img/160823181757.jpg' %}" alt="" border="0"></p></a>
+				</div>
+				<div class="user_info_r">
+					<div class="register_method">
+						<a class="register_method_in" href="{% url 'apps:logins' %}">
+							登录
+							<span class="method_txt_1"></span>
+						</a>
+						<span class="register_method_in register_on">注册
+							<span class="method_txt_2"></span>
+						</span>
+					</div>
+					<div class="register_style">
+						<form class="register_stylebox" action="{% url 'apps:registers' %}" method="post">
+                            {% csrf_token %}
+							<div class="register_style_txt1">
+								<label class="email_rlable" for="txtRegisterID1"></label>
+								<input type="text" id="txtRegisterID1" name="txtRegisterID" class="txt1_in" tabindex="1" value="" placeholder="邮箱">
+							    <label class="true_rlable1" for="txtRegisterID1"></label>
+							    <div class="flase_rlable1">您输入的邮箱不符合规范</div>
+							</div>
+							<div class="register_style_txt2">
+								<label class="email_rlable" for="txtRegisterID2"></label>
+								<input type="text" id="txtRegisterID2" name="txtRegisterID2" class="txt2_in" tabindex="1" value="" placeholder="手机号">
+								<label class="true_rlable2" for="txtRegisterID2"></label>
+							    <div class="flase_rlable2">邮箱或手机号至少填一个！</div>
+							    <div class="flase_rlable22">您输入手机号码不符合规范</div>
+							</div>
+							<div class="register_style_txt3">
+								<label class="rpwd_lable" for="txtRegisterID3"></label>
+								<input type="password" id="txtRegisterID3" name="txtRegisterID3" class="txt3_in" tabindex="1" value="" placeholder="密码">
+								<label class="true_rlable3" for="txtRegisterID3"></label>
+								<div class="flase_rlable3">请输入8-20位字母和数字！</div>
+								<div class="flase_rlable33">密码请设为8-20位字母和数字！</div>
+								<div class="flase_rlable333"></div>
+							</div>
+							<div class="register_style_txt4">
+								<label class="rpwd_lable" for="txtRegisterID4"></label>
+								<input type="password" id="txtRegisterID4" name="txtRegisterID3" class="txt4_in" tabindex="1" value="" placeholder="确认密码">
+								<label class="true_rlable4" for="txtRegisterID4"></label>
+								<div class="flase_rlable4">请再次输入密码！</div>
+								<div class="flase_rlable44">两次输入的密码不一致！</div>
+							</div>
+							<div class="register_style_txt5">
+								<span class="txt5_topl">请输入验证码</span><br>
+								<input class="txt5_botl" type="text" value="" style="border: 1px solid rgb(153, 153, 153);">
+								<input class="txt5_botr" type="button" value="1tR3">
+								<span><a class="txt5_botr_r" href="">换一组</a></span>
+							</div>
+							<div class="register_style_txt6">
+								<input type="submit" class="txt6_in" value="同意以下协议，提交">
+							</div>
+							<div class="login_style_txt7">
+								<input class="txt7_in" type="checkbox">同意<a class="txt7_in_a" href="">梦芭莎注册条款</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+            <div class="footer">
+                <a href="http://www.moonbasa.com/" rel="nofollow" title="女性内衣专家梦芭莎首页">首页</a>
+                <a href="http://help.moonbasa.com/help/detial/33" rel="nofollow">公司简介</a>
+                <a href="http://www.moonbasa.com/" title="梦芭莎">旗下品牌</a>
+                <a href="http://help.moonbasa.com/help/ShopMap.aspx" rel="nofollow">零售店址</a>
+                <a href="http://union.moonbasa.com" title="梦芭莎网站联盟">梦芭莎网盟</a>
+                <a href="http://fenxiao.moonbasa.com/">网店代理</a>
+                <a href="http://www.moonbasa.com/home/sitemap" target="_blank" title="梦芭莎网店代理">网站地图</a>
+                <a href="http://www.moonbasa.com/category">友情链接</a>
+                <a href="http://help.moonbasa.com/help/jop.html" title="梦芭莎评论">加入我们</a>
+                <br>
+                Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号
+		    </div>
+		</div>
+	</body>
+</html>

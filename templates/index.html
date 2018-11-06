@@ -18,19 +18,19 @@
 {#        <script src="{% static 'js/test.js' %}"></script>#}
 	</head>
 	<body>
-	   <div class="out">
-	        <div class="in" style="left: 648.5px; top: 258.5px;"><img src="{% static '/img/out.png' %}">
-	            <div class="xx"><a href=""><img src="{% static 'img/shutdown01.png' %}"></a></div>
-	        </div>
-	   </div>
+{#	   <div class="out">#}
+{#	        <div class="in" style="left: 648.5px; top: 258.5px;"><img src="{% static '/img/out.png' %}">#}
+{#	            <div class="xx"><a href=""><img src="{% static 'img/shutdown01.png' %}"></a></div>#}
+{#	        </div>#}
+{#	   </div>#}
 		<!--顶部开始-->
 		<div class="headerbox">
 			<!--顶部菜单栏-->
 	        <div class="header">
 	        	<div class="header_top">
 	        		<div class="top_in">
-	        			<a href="" class="startlogin" target="_blank">登录</a><span>|</span>
-	        			<a href="register.html" target="_blank">注册</a><span>|</span>
+	        			<a href="/login/" class="startlogin" target="_blank">登录</a><span>|</span>
+	        			<a href="/register/"  target="_blank">注册</a><span>|</span>
 	        			<a href="#">微信
 	        				<div class="phoneCode"><img src="{% static 'img/0826143248.jpg' %}" alt=""></div>
 	        			</a><span>|</span>
@@ -418,7 +418,7 @@
 			<div class="banner_point">
 				<ul class="bar">
 	                <li class="active"></li>
-	                <li></li>
+	                <li src=""></li>
 	                <li></li>
 	                <li></li>
 	                <li></li>
@@ -886,11 +886,11 @@
             				<img src="{% static 'img/User.jpg' %}">
             				<p>请先登录哦！</p>
             				<div class="login_text">
-            					<a href="login.html" target="_blank">登录</a>
-            					<a href="register.html" target="_blank">注册</a>
+            					<a href="{% url 'apps:logins' %}" target="_blank">登录</a>
+            					<a href="{% url 'apps:registers' %}" target="_blank">注册</a>
             				</div>
-            				<a href="" class="login_l">我的订单</a>
-            				<a href="" class="login_r">我的收藏</a>
+            				<a href="{% url 'apps:carts' %}" class="login_l">我的订单</a>
+            				<a href="{% url 'apps:carts' %}" class="login_r">我的收藏</a>
             			</div>
             		</li>
             		<li class="twoli">

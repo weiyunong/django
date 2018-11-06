@@ -138,40 +138,41 @@ $(function(){
 
     		
 	//如果已经存在该用户, 不能注册
-	//不存在则注册, 保存到cookie	
-	$("input.txt6_in").click(function(){							
-		//注册(cookie存储)
-		var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
-		//先判断是否存在该用户
-		for (var i=0; i<users.length; i++) {
-			if ( users[i].name == $('.txt1_in').val()|| users[i].name == $('.txt2_in').val()) {
-				console.log( $.cookie("users") );
-				alert("用户名已存在! 不能注册相同的用户");
-				return;
-			}else if(users[i].name != $('.txt1_in').val()|| users[i].name != $('.txt2_in').val()){
-				if(confirm("注册成功，点击确定回到登录页面")){
-					window.location.href="login.html";
-				}else{
-					window.close();
-				}
-			}
-		}
-		
-		if($('input.txt7_in').is(':checked') && str_pwd==str_confirmpwd && isTure3 && (isTure2 || isTure1||(isTure1 && isTure2)) && str_postcode==rtestPwd.val()){
-			//注册用户
-		    var user = {
-		    	name: $('.txt1_in').val(),
-		    	pwd: $('.txt3_in').val()
-		    }
-		    var user1 = {
-		    	name: $('.txt2_in').val(),
-		    	pwd: $('.txt3_in').val()
-		    }
-		    users.push(user); 	
-		    users.push(user1); 
-		    $.cookie("users", JSON.stringify(users), {expires:22, path:"/"});
-//		    console.log( $.cookie("users") );
-		}
-	})
+	//不存在则注册, 保存到cookie
+	// $("input.txt6_in").click(function(){
+	// 	//注册(cookie存储)
+	// 	var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
+	// 	//先判断是否存在该用户
+	// 	for (var i=0; i<users.length; i++) {
+	// 		if ( users[i].name == $('.txt1_in').val()|| users[i].name == $('.txt2_in').val()) {
+	// 			console.log( $.cookie("users") );
+	// 			alert("用户名已存在! 不能注册相同的用户");
+	// 			return;
+	// 		}else if(users[i].name != $('.txt1_in').val()|| users[i].name != $('.txt2_in').val()){
+	// 			if(confirm("注册成功")){
+	// 				window.location.href="";
+	// 			}
+	// 			// else{
+	// 			// 	window.close();
+	// 			// }
+	// 		}
+	// 	}
+    //
+	// 	if($('input.txt7_in').is(':checked') && str_pwd==str_confirmpwd && isTure3 && (isTure2 || isTure1||(isTure1 && isTure2)) && str_postcode==rtestPwd.val()){
+	// 		//注册用户
+	// 	    var user = {
+	// 	    	name: $('.txt1_in').val(),
+	// 	    	pwd: $('.txt3_in').val()
+	// 	    }
+	// 	    var user1 = {
+	// 	    	name: $('.txt2_in').val(),
+	// 	    	pwd: $('.txt3_in').val()
+	// 	    }
+	// 	    users.push(user);
+	// 	    users.push(user1);
+	// 	    $.cookie("users", JSON.stringify(users), {expires:22, path:"/"});
+	// 	    // console.log( $.cookie("users") );
+	// 	}
+	// })
 
 })

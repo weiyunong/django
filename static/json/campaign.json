@@ -1,0 +1,14 @@
+[
+	{
+		"camID":"1", 
+		"camimg":"'static/img/cam_1.jpg'"
+	},
+	{
+		"camID":"2", 
+		"camimg":"'static/img/cam_2.jpg'"
+	},
+	{
+		"camID":"3", 
+		"camimg":"'static/img/cam_3.jpg'"
+	}
+]

@@ -145,7 +145,7 @@ function start(){
 
 
 //活动开始  
-    $.get("json/campaign.json",function(data){ 	
+    $.get("static/json/campaign.json",function(data){
     	for(var i=0;i<data.length;i++){
     		var camObj = data[i];
     		var a = $("<a href=''><img src="+camObj.camimg+" /></a>");
@@ -157,7 +157,7 @@ function start(){
 //女士>欧美时尚
     $.ajax({
     	type:"get",
-    	url:"json/women.json",
+    	url:"static/json/women.json",
     	async:true,
     	success:function(data){
 //			console.log('请求成功，data'+data);
@@ -184,7 +184,7 @@ function start(){
  //女士>日韩潮流
      $.ajax({
     	type:"get",
-    	url:"json/rhWomne.json",
+    	url:"static/json/rhWomne.json",
     	async:true,
     	success:function(data){
 			for(var i=0; i<data.length; i++){
@@ -222,7 +222,7 @@ function gClick(){
 //男士>商务男装
     $.ajax({
     	type:"get",
-    	url:"json/men.json",
+    	url:"static/json/men.json",
     	async:true,
     	success:function(data){
 			for(var i=0; i<data.length; i++){
@@ -264,7 +264,7 @@ function hh(){
 //单品
     $.ajax({
     	type:"get",
-    	url:"json/alonegoods.json",
+    	url:"static/json/alonegoods.json",
     	async:true,
     	success:function(data){
 			for(var i=0; i<data.length; i++){
@@ -358,7 +358,7 @@ function addcart1(id,img,name,size,color,price,count){
 	var cartdd_div2_div1=$('<div class="orderPic"></div>');
 	var cartdd_div2_div1_a=$('<a href=""><img src="'+img+'" alt="" style="width: 34px;"/></a>')
 	var cartdd_div2_div2=$('<div class="orderDes"></div>');
-	var cartdd_div2_div2_p1=$('<p title="'+name+'" class="p1"><a href="" target="_blank">'+name+'</a></p>')
+	var cartdd_div2_div2_p1=$('<p title="'+name+'" class="p1"><a href="" target="_blank">'+name+'</a></p>');
 	var cartdd_div2_div2_p2=$('<p style="color: #9F9F9F;" class="p2">'+size+color+'</p>');
 	var cartdd_div2_div2_p3=$('<p style="color:#999" class="p3"></p>');
 	var cartdd_div2_div2_p3_span=$('<span class="orderDes_del">删除</span><span style="color:#e50065;font-family:arial">¥</span><span style="color:#e50065;font-family:arial">'+price+'</span><span>*'+count+'</span>');
@@ -369,24 +369,24 @@ function addcart1(id,img,name,size,color,price,count){
 	cartdd.append(cartdd_div1);
 	cartdd.append(cartdd_div2);
 	cartdd_div2.append(cartdd_div2_div1);
-	cartdd_div2_div1.append(cartdd_div2_div1_a)
+	cartdd_div2_div1.append(cartdd_div2_div1_a);
 	cartdd_div2.append(cartdd_div2_div2);
 	cartdd_div2_div2.append(cartdd_div2_div2_p1);
 	cartdd_div2_div2.append(cartdd_div2_div2_p2);
 	cartdd_div2_div2.append(cartdd_div2_div2_p3);
 	cartdd_div2_div2_p3.append(cartdd_div2_div2_p3_span);
 }    
-
-//点击跳转到购物车
-$('.clo-btn').click(function(){   	
-    	window.open("shopping_cart.html");
 })
+// //点击跳转到购物车
+// $('.clo-btn').click(function(){
+//     	window.open("shopping_cart.html");
+// })
 
 
 
-//点击跳转到登录页面
-$('.startlogin').click(function(){   	
-    window.open("login.html");
-    	
-})
-})
+// //点击跳转到登录页面
+// $('.startlogin').click(function(){
+//     window.open("login.html");
+//
+// })
+// })

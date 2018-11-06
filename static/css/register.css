@@ -8,8 +8,20 @@ a{color: #797979;font-size: 12px;text-decoration: none;}
 .footer{color: #989898;float: left;padding-top: 78px;text-align: center;width: 980px;}
 .footer a{color: #888;}
 
-.user_info_r{float: left;height: auto;width: 400px;text-align: left;padding-top: 16px;overflow: hidden;}
-.register_method_in{font-size: 14px; color: #9f9f9f;cursor: pointer;display: inline-block;padding-bottom: 15px;position: relative;text-align: center;width: 49%;}
+.user_info_r{float: left;
+            height: auto;
+            width: 400px;
+            text-align: left;
+            padding-top: 16px;
+            overflow: hidden;}
+.register_method_in{font-size: 14px;
+                    color: #9f9f9f;
+                    cursor: pointer;
+                    display: inline-block;
+                    padding-bottom: 15px;
+                    position: relative;
+                    text-align: center;
+                    width: 49%;}
 .method_txt_1{background: black;display: inline-block;height: 2px;position: absolute;top:36px;left:71px;width: 55px;display: none;}
 .method_txt_2{background: black;display: inline-block;height: 2px;position: absolute;top:36px;left:62px;width: 72px;}
 .register_on{color: #000;}

@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>梦芭莎登录</title>
+		<link rel="stylesheet" href="{% static 'css/login.css' %}" />
+		<link rel="icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/login.js' %}" ></script>
+{#        <script src="{% static 'js/test.js' %}"></script>#}
+	</head>
+
+	<body>
+		<div class="head">
+			<a href="{% url 'apps:indexs' %}"><p><img src="{% static 'img/0309blogin2.jpg' %}" alt="" border="0"></p></a>
+		</div>
+		<div class="main">
+			<div class="user_info">
+				<div class="user_info_l">
+					<a href="/"><p><img src="{% static 'img/160823181757.jpg' %}" alt="" border="0"></p></a>
+				</div>
+				<div class="user_info_r">
+					<div class="login_method">
+						<span class="method_txt method_txton">普通登录
+							<span class="method_txt_1"></span>
+						</span>
+						<span class="method_txt">无密码登录
+							<span class="method_txt_2"></span>
+						</span>
+					</div>
+					<div class="login_style">
+						<form class="login_stylebox1" action="{% url 'apps:logins' %}" method="post" >
+                            {% csrf_token %}
+							<div class="login_style_txt1">
+								<label class="name_lable" for="txtLoginID"></label>
+								<input type="text" id="txtLoginID" name="txtLoginID" class="login_style_txt1_name" tabindex="1" title="请输入账号" value="" placeholder="手机号/邮箱/会员卡号">
+								<label class="true_lable1" for="txtLoginID"></label>
+								<div class="flase_lable1">邮箱/手机号/会员卡号不能为空</div>
+							    <div class="flase_lable11">邮箱/手机号/会员卡号错误，请重新输入</div>
+							</div>
+							<div class="login_style_txt2">
+								<label class="pwd_lable" for="txtLoginPwd"></label>
+								<input type="password" id="txtLoginPwd" name="txtLoginPwd" class="login_style_txt1_pwd" tabindex="1" title="请输入密码" value="" placeholder="密码">
+								<label class="true_lable2" for="txtLoginPwd"></label>
+								<div class="flase_lable2">密码不能为空</div>
+							</div>
+							<div class="login_style_txt3">
+								<span class="login_style_txt3_l">请输入验证码</span><br>
+								<input class="login_style_txt3_teston" type="text" value="">
+								<input class="login_style_txt3_test" type="button" value="lSR1">
+								<span><a class="login_style_txt3_r" href="">换一组</a></span>
+							</div>
+							<div class="login_style_txt4">
+								<span><a class="login_style_txt4_l" href="">忘记密码?</a></span>
+								<span><a class="login_style_txt4_r" href="{% url 'apps:registers' %}">注册</a></span>
+							</div>
+							<div class="login_style_txt5">
+								<input type="submit" id="txtLoginSub" class="login_style_txt5_sub" value="立即登录">
+							</div>
+							<div class="login_style_txt6">
+								<span class="login_style_txt6_l">其他登录方式:</span><br>
+								<span class="login_style_txt6_r">
+									<a href=""><img src="{% static 'img/wx.jpg' %}"></a>
+									<a href=""><img src="{% static 'img/qqlogo0.jpg' %}"></a>
+									<a href=""><img src="{% static 'img/l_050.jpg' %}"></a>
+									<a href=""><img src="{% static 'img/weibologin0.jpg' %}"></a>
+								</span>
+							</div>
+						</form>
+
+{#						<form class="login_stylebox2">#}
+{#							<div class="login_style_txt1">#}
+{#								<label class="name_lable" for="txtLoginID1"></label>#}
+{#								<input type="text" id="txtLoginID1" name="txtLoginID1" class="login_style_txt1_name" tabindex="1" title="请输入手机号" value="" placeholder="输入手机号">#}
+{#							</div>#}
+{#							<div class="login_style_txt3">#}
+{#								<span class="login_style_txt3_l">请输入验证码</span><br>#}
+{#								<input class="login_stylebox2_teston" type="text" value="">#}
+{#								<input class="login_stylebox2_test" type="button" value="v02m">#}
+{#								<span><a class="login_style_txt3_r1" href="">换一组</a></span>#}
+{#							</div>#}
+{#							<div class="login_style_txt7">#}
+{#								<input type="text" class="login_style_txt7_pwd" tabindex="1" title="请输入动态口令" value="" placeholder="动态口令">#}
+{#								<input type="submit" id="txtLoginbut" class="login_style_txt7_but" value="获取手机动态口令" data-time="60">#}
+{#							</div>#}
+{#							<div class="login_style_txt4">#}
+{#								<span><a class="login_style_txt4_l" href="">忘记密码?</a></span>#}
+{#								<span><a class="login_style_txt4_r" href="/register/">注册</a></span>#}
+{#							</div>#}
+{#							<div class="login_style_txt5">#}
+{#								<input type="button" id="txtLoginSub1" class="login_style_txt5_sub" value="立即登录">#}
+{#							</div>#}
+{#							<div class="login_style_txt6">#}
+{#								<span class="login_style_txt6_l">其他登录方式:</span><br>#}
+{#								<span class="login_style_txt6_r">#}
+{#									<a href=""><img src="{% static 'img/wx.jpg' %}"></a>#}
+{#									<a href=""><img src="{% static 'img/qqlogo0.jpg' %}"></a>#}
+{#									<a href=""><img src="{% static 'img/l_050.jpg' %}"></a>#}
+{#									<a href=""><img src="{% static 'img/weibologin0.jpg' %}"></a>#}
+{#								</span>#}
+{#							</div>#}
+{#						</form>#}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+            <div class="footer">
+                <a href="http://www.moonbasa.com/" rel="nofollow" title="女性内衣专家梦芭莎首页">首页</a>
+                <a href="http://help.moonbasa.com/help/detial/33" rel="nofollow">公司简介</a>
+                <a href="http://www.moonbasa.com/" title="梦芭莎">旗下品牌</a>
+                <a href="http://help.moonbasa.com/help/ShopMap.aspx" rel="nofollow">零售店址</a>
+                <a href="http://union.moonbasa.com" title="梦芭莎网站联盟">梦芭莎网盟</a>
+                <a href="http://fenxiao.moonbasa.com/">网店代理</a>
+                <a href="http://www.moonbasa.com/home/sitemap" target="_blank" title="梦芭莎网店代理">网站地图</a>
+                <a href="http://www.moonbasa.com/category">友情链接</a>
+                <a href="http://help.moonbasa.com/help/jop.html" title="梦芭莎评论">加入我们</a>
+                <br>
+                Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号
+		    </div>
+		</div>
+	</body>
+</html>

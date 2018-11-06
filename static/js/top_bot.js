@@ -60,7 +60,7 @@ $(function () {
     
  //banner部分
     //get请求获取背景图片
-    $.get("json/banners.json",function(data){ 	
+    $.get("static/json/banners.json",function(data){
     	for(var i=0;i<data.length;i++){
     		var bgObj = data[i];
 //  		console.log(bgObj.bg);

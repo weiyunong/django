@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+        <link rel="shortcut icon" href="{% static 'img/aaaaaa.jpg' %}" type="image/x-icon" />
+        <link rel="stylesheet" href="{% static 'css/detail.css' %}" />
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/detail.js' %}" ></script>
+        <script src="{% static 'js/jquery.cookie.js' %}"></script>
+		<title>商品详情</title>
+	</head>
+	<body>
+		<div class="detail">
+			<div class="detail_main">
+				<div class="detail_main_l">
+					<a href="index.html">返回首页&nbsp;&gt;</a>
+					<div class="pic_ct">
+						<div class="bigArea" style=""><img class="bigPic" style="width: 1512.35px; height: 2042.51px;" src="{% static 'undefined' %}"></div>
+						<div class="pic_ct_max">
+							<div class="smallArea" style=""></div>
+							<ul>
+								<li><a href=""><img alt="" class="smallPic" src="{% static 'undefined' %}"></a></li>
+							</ul>
+						</div>
+						<div class="pic_ct_min">
+							<div class="pic_ct_minct">
+								<ul>
+									<li><a href=""><img src="{% static 'img/431216304-053-01-S.jpg' %}" alt=""></a></li>
+                                    <li><a href=""><img src="{% static 'img/431216304-010-01-S.jpg' %}" alt=""></a></li>
+                                    <li><a href=""><img src="{% static 'img/431216304-070-01-S.jpg' %}" alt=""></a></li>
+                                    <li><a href=""><img src="{% static 'img/431216304-053-02-S.jpg' %}" alt=""></a></li>
+                                    <li><a href=""><img src="{% static 'img/431216304-010-02-S.jpg' %}" alt=""></a></li>
+                                    <!--<li><a href=""><img src="img/431216304-070-02-S.jpg" alt=""/></a></li>
+                                    <li><a href=""><img src="img/431216304-053-03-S.jpg" alt=""/></a></li>
+									<li><a href=""><img src="img/431216304-070-03-S.jpg" alt=""/></a></li>-->
+								</ul>
+							</div>
+							<div class="pic_ct_minpn">
+								<a href="" class="pic_ct_minpn_prve"><img src="{% static 'img/slon.png' %}"></a>
+								<a href="" class="pic_ct_minpn_next"><img src="{% static 'img/sron.png' %}"></a>
+							</div>
+						</div>
+					</div>
+					<div class="share">
+						<p>商品编码:</p>
+						<span><img src="{% static 'img/16012220.png' %}">预约试穿</span>
+						<span><img src="{% static 'img/16012224.png' %}">收藏</span>
+					</div>
+				</div>
+				<div class="detail_main_m">
+				    <h2></h2>
+				    <div class="LookP">
+				    	<div class="LookP_codeshow">
+				    		<img src="{% static 'img/move01.gif' %}" alt="">
+				    		<p>手机便捷购买</p>
+				    		<div class="LookP_codehide">
+				    			<div class="shut"></div>
+				    			<img src="{% static 'img/QRCodeCreateaaa.png' %}" alt="">
+				    		</div>
+				    	</div>
+				    	<div class="LookP_price">
+				    		<span class="leftPrice">
+				    			<i class="renBox">¥</i>
+				    			<b></b>
+				    		</span>
+				    	</div>
+				    	<p class="LookP_down">
+				    		<a id="pointcom" href="">
+                                                                                      评价（
+                                    <span class="spSelReviewCount" style="text-decoration:underline">20</span>
+                                                                                      ）条
+                            </a>
+                            | 梦芭莎自营
+				    	</p>
+				    </div>
+
+				    <div class="m_else_down">
+				    	<div class="color_size_num">
+				    	    <div class="color">
+				    	    	<ul>
+				    	    		<li class="color_oneli">颜色</li>
+				    	    		<li class="color_twoli">
+				    	    			<p class="color_twoli1 twoli1act">
+				    	    				<a class="s1" href=""><img src="{% static 'img/431216304-053-00-C.jpg' %}"></a>
+				    	    				<a class="s2" title="宝蓝" href="">宝蓝</a>
+				    	    			</p>
+				    	    			<p class="color_twoli1">
+				    	    				<a class="s1" href=""><img src="{% static 'img/431216304-010-00-C.jpg' %}"></a>
+				    	    				<a class="s2" title="白色" href="">白色</a>
+				    	    			</p>
+				    	    			<p class="color_twoli1">
+				    	    				<a class="s1" href=""><img src="{% static 'img/431216304-070-00-C.jpg' %}"></a>
+				    	    				<a class="s2" title="粉色" href="">粉色</a>
+				    	    			</p>
+				    	    		</li>
+				    	    	</ul>
+				    	    </div>
+				    	    <div class="size">
+				    	    	<ul>
+				    	    		<li class="size_oneli">尺码</li>
+				    	    		<li class="size_twoli">
+				    	    			<a href="" title="S" class="cartSize">S</a>
+				    	    			<a href="" title="M">M</a>
+				    	    			<a href="" title="L">L</a>
+				    	    			<a href="" title="XL">XL</a>
+				    	    		</li>
+				    	    	</ul>
+				    	    </div>
+				    	    <div class="num">
+				    	    	<ul>
+				    	    		<li class="num_oneli">数量</li>
+				    	    		<li class="num_twoli">
+				    	    			<p><b class="count">1</b></p>
+				    	    			<span>现在有货</span>
+				    	    		</li>
+				    	    	</ul>
+				    	    </div>
+				        </div>
+				        <div class="payment_addcart">
+				        	<span class="payment"><i>立即购买</i></span>
+				        	<span class="addcart"><i>加入购物车</i></span>
+				        </div>
+				        <div class="mainland_ser">
+				        	<ul>
+				        		<li>
+				        			<span><img src="{% static 'img/16012207.png' %}" alt="">门店自提</span>
+				        		</li>
+				        		<li>
+				        			<span><img src="{% static 'img/16012209.png' %}" alt="">门店 7天无条件退换货</span>
+				        		</li>
+				        		<li>
+				        			<span><img src="{% static 'img/16012211.png' %}" alt="">满180元免运费</span>
+				        		</li>
+				        		<li>
+				        			<span><img src="{% static 'img/16012213.png' %}" alt="">梦芭莎发货</span>
+				        		</li>
+				        	</ul>
+				        </div>
+				    </div>
+				</div>
+			    <div class="detail_main_r">
+			    	<h3>看了又看</h3>
+			    	<div class="lookback">
+			    		<ul>
+			    			<li>
+			    				<img src="{% static 'img/431216309-053-01-S.JPG' %}">
+			    				<p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/432015306-199-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/431216303-171-01-S.JPG' %}">
+			    			    <p class="jzjg">¥149</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/432216304-010-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/431215302-053-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/431216303-171-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/431216303-171-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    			<li>
+			    				<img src="{% static 'img/431216303-171-01-S.JPG' %}">
+			    			    <p class="jzjg">¥159</p>
+			    			</li>
+			    		</ul>
+			    	</div>
+			    	<div class="lookbackbtn">
+			    		<a href="" class="btn_up"></a>
+			    		<a href="" class="btn_down"></a>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+
+
+
+
+
+		<!--右侧菜单-->
+        <div class="right_nav">
+        	<ul>
+        		<li class="oneli">
+        			<img src="{% static 'img/nitemf_09.png' %}">
+        			<div id="sanjiao"></div>
+        			<div class="login right_lis">
+        				<a class="close" href="">×</a><br>
+        				<img src="{% static 'img/User.jpg' %}">
+        				<p>请先登录哦！</p>
+        				<div class="login_text">
+        					<a href="login.html" target="_blank">登录</a>
+        					<a href="register.html" target="_blank">注册</a>
+        				</div>
+        				<a href="" class="login_l">我的订单</a>
+        				<a href="" class="login_r">我的收藏</a>
+        			</div>
+        		</li>
+        		<li class="twoli">
+        			<img class="twoli_imgone" src="{% static 'img/nitemf_05.png' %}">
+        			<div id="sanjiao" style="top: 25%;"></div>
+        			<p class="twoli_shopname">购物车</p>
+        			<div id="twoli_redpn">
+                        <img class="twoli_redpn_img" src="{% static 'img/red_ring.png' %}">
+                        <span class="twoli_redpn_span">0</span>
+        			</div>
+        			<div class="twoli_shop right_lis">
+        				<a class="close" href="">×</a><br>
+        				<p>购物车</p>
+        				<div class="twoli_shop_empty">
+        					<i><img src="{% static 'img/nitemf_01.png' %}"></i>
+        					<p>
+        						<br>
+        						您的购物车还没有商品
+        						<br>
+        						再去逛逛吧！
+        					</p>
+        				</div>
+                        <!--<div class="order_List">
+                        	<dl>
+                        		<dd class="order_Listli">
+                        			<div class="order_title"><span>梦芭莎</span></div>
+                        			<div class="order_goods">
+                        				<div class="orderPic">
+                        					<a href=""><img src="img/431216304-053-01-M.jpg" alt="" style="width: 34px;"/></a>
+                        				</div>
+                        				<div class="orderDes">
+                        					<p title="大热萌猫咪缤纷印花炫彩撞色罗纹装饰落肩袖圆领七分袖套头卫衣" class="p1">
+                                                <a href="" target="_blank">大热萌猫咪缤纷印花炫彩撞色罗纹装饰落肩袖圆领七分袖套头卫衣</a>
+                                            </p>
+                                            <p style="color: #9F9F9F;" class="p2">S 宝蓝</p>
+                                            <p style="color:#999" class="p3">
+                                                <span class="orderDes_del"">删除</span>
+                                                <span style="color:#e50065;font-family:arial">¥139*1</span>
+                                            </p>
+                        				</div>
+                        			</div>
+                        		</dd>
+                        	</dl>
+                        </div>-->
+        			    <div class="accounts">
+        			    	<div class="total">
+        			    		<div class="goods_num fl">
+        			    			<span>共</span><span class="cartSum_h">1</span>件商品
+        			    		</div>
+        			    		<div class="goods_cost fr">
+        			    			<span style="font-size: 16px; font-family: arial">¥</span>
+                                    <span id="accounts_price" style="font-size: 18px;">0</span>
+        			    		</div>
+        			    	</div>
+        			    	<div class="clo-btn">去购物车结算 </div>
+        			    </div>
+        			</div>
+        		</li>
+        		<li class="threeli">
+        			<img src="{% static 'img/nitemf_07.png' %}">
+        			<div id="sanjiao"></div>
+        			<div class="threeli_collect right_lis">
+        				<div class="threeli_collectin">我的收藏</div>
+        			</div>
+        		</li>
+        		<li class="fourli">
+        			<img src="{% static 'img/nitemf_10.png' %}">
+        			<div id="sanjiao"></div>
+        			<div class="fourli_phone right_lis">
+        				<div class="fourli_phonein"><img src="{% static 'img/code_app.jpg' %}" alt=""></div>
+        			</div>
+        		</li>
+        		<li class="fiveli">
+        			<img src="{% static 'img/nitemf_08.png' %}">
+        			<div id="sanjiao"></div>
+        			<div class="fiveli_information right_lis">
+        				<div class="fiveli_informationin"><img src="{% static 'img/code_wechat.jpg' %}" alt=""></div>
+        			</div>
+        		</li>
+        		<li class="sixli">
+        			<img class="sixli_oneimg" src="{% static 'undefined' %}">
+        			<div id="sanjiao"></div>
+        			<div class="sixli_sever right_lis">
+        				<div class="sixli_severin">联系客服</div>
+        			</div>
+        		</li>
+        		<li class="sevenli">
+        			<img src="{% static 'img/menu_top.png' %}">
+        			<div id="sanjiao"></div>
+        			<div class="sevenli_back right_lis">
+        				<div class="sevenli_backin"><a href="#">回到顶部</a></div>
+        			</div>
+        		</li>
+        	</ul>
+        </div>
+	</body>
+</html>
